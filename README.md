@@ -21,9 +21,9 @@ Once on the page, users may scroll throughout the page to view the different sec
 * "My Work" will auto-scroll the page to a section that features examples of my past work. Users can click each image to be taken to the deployed project.
 * "Contact Me" will auto-scroll the page to a section that details different contact methods to get in touch with me. There is also a link to my GitHub page and my Instagram.
 
-![webpage screenshot 1](assets/images/screenshot1-jpg)
+![webpage screenshot 1](./assets/images/screenshot1-jpg)
 
-![webpage screenshot 2](assets/images/screenshot2-jpg)
+![webpage screenshot 2](./assets/images/screenshot2-jpg)
    
 
 ## Credits
