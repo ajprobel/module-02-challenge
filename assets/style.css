@@ -1,5 +1,7 @@
+/* Importing "Urbanist" font from Google */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Setting variables for color scheme */
 :root {
     --primary-color:rgb(196, 134, 0);
     --secondary-color:rgb(238, 233, 223);
@@ -11,6 +13,7 @@ body {
     font-family: 'urbanist', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+/* Organizing the content of the header */
 header {
     display: flex;
     justify-content: space-between;
@@ -20,6 +23,7 @@ header {
     border-bottom: 5px solid rgb(0, 0, 0);
 }
 
+/* This is the title card for my name */
 h1 {
     background-color: var(--secondary-color);
     border: 3px solid black;
@@ -35,6 +39,7 @@ ul li {
     display: inline;
 }
 
+/* Organizing the Navigation links in the header */
 #nav-links {
     display: flex;
     justify-content: space-between;
@@ -48,16 +53,24 @@ a {
     color: black;
 }
 
+/* Setting color for hovering over links in body */
 a:hover {
     color: var(--secondary-color);
 }
 
+/* Styling for Navigation links */
 #nav-links a {
     background-color: var(--secondary-color);
     padding: 10px;
     border: 2px solid black;
     text-decoration: none;
     box-shadow: 2px 2px 15px rgba(94, 94, 94, 0.658);
+}
+
+/* Setting color and decoration for hovering over header links */
+#nav-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 #headshot {
@@ -70,6 +83,7 @@ a:hover {
     align-self: center;
 }
 
+/* Organization for list next to large photograph */
 #headshot ul {
     display: flex;
     flex-direction: column;
@@ -82,6 +96,7 @@ a:hover {
     margin-left: 50px;
 }
 
+/* Styling for list next to large photograph */
 #headshot li {
     background-color: var(--secondary-color);
     padding: 10px;
@@ -91,18 +106,21 @@ a:hover {
     text-align: center;
 }
 
+/* Styling main photograph of myself */
 #headshot img {
     height:500px;
     border: 10px solid rgb(0, 0, 0);
     box-shadow: 2px 2px 30px var(--primary-color);
 }
 
+/* Setting generic attributes to page content */
 section {
     margin: 40px;
     margin-top: 55px;
     margin-bottom: 55px;
 }
 
+/* Assigning each main part of the page to be a flexbox */
 #about-me,
 #my-work,
 #contact-me {
@@ -111,6 +129,7 @@ section {
     color: var(--secondary-color)
 }
 
+/* Setting attributes for content inside each section */
 section div {
     width: 800px;
     display: flex;
@@ -118,6 +137,30 @@ section div {
     margin: 10px;
 }
 
+#about-me div {
+    width: 875px;
+}
+
+#contact-me div {
+    width: 900px;
+}
+
+/* Styling for each section label */
+h2 {
+    margin: 15px;
+    padding: 15px;
+    border-right: 2px solid var(--primary-color);
+    text-align: end;
+    font-size: 36px;
+}
+
+#about-me p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Organizing the images for work examples */
 #work-tiles {
     display: flex;
     flex-flow: row wrap;
@@ -129,34 +172,24 @@ section div {
     width: 800px;
 }
 
-#sub-project {
+#sub-project1,
+#sub-project2 {
     width: 350px;
 }
 
-#sub-project img {
+#sub-project1 img,
+#sub-project2 img {
     display: inline-block;
     width: 350px;
     height: 200px;
 }
 
-#sub-project {
+#sub-project1,
+#sub-project2 {
     display: block;
 }
 
-h2 {
-    margin: 15px;
-    padding: 15px;
-    border-right: 2px solid rgb(238, 238, 238);
-    text-align: end;
-    font-size: 36px;
-}
-
-#about-me p {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-
+/* Defining attributes for each work example container */
 .img-container {
     position: relative;
     display: inline-block;
@@ -164,16 +197,18 @@ h2 {
     border: 5px solid white;
 }
 
+/* Makes the image appear at half-opacity by default */
 .img-container img {
     display: block;
     opacity: 0.5;
 }
 
+/* When a user hovers over the image, the image appears at "full brightness" */
 .img-container img:hover {
     opacity: 1.0;
 }
 
-
+/* Positioning text overlay on the main featured project */
 #featured-project .overlay-text {
     position: absolute;
     font-size: 18px;
@@ -186,11 +221,25 @@ h2 {
     padding-left: 50px;
 }
 
-#sub-project .overlay-text {
+/* Assigning different positioning for the first sub-project */
+#sub-project1 .overlay-text {
     position: absolute;
     font-size: 14px;
-    top: 75%;
-    left: 100px;
+    top: 70%;
+    left: 115px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+/* Assigning different positioning for the second sub-project */
+#sub-project2 .overlay-text {
+    position: absolute;
+    font-size: 14px;
+    top: 74%;
+    left: 70px;
     transform: translate(-50%, -50%);
     background-color: white;
     color: black;
@@ -207,6 +256,7 @@ h2 {
     font-weight: 600;
 }
 
+/* The next two blocks style the contact links */
 #contact-list a {
     color: var(--secondary-color)
 }
@@ -215,10 +265,13 @@ h2 {
     color: var(--primary-color);
 }
 
+/* Simple footer styling */
 footer {
     height: 50px;
     position: relative;
     bottom: 0px;
     background-color: var(--primary-color);
-    border-top: 5px solid var(--secondary-color);
+    border-top: 5px solid black;
 }
+
+
