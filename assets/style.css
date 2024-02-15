@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color:rgb(196, 134, 0);
+    --secondary-color:rgb(238, 233, 223);
+}
+
+body {
+    margin: 0;
+    background-color: rgb(41, 39, 37);
+    font-family: 'urbanist', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+h1 {
+    background-color: var(--secondary-color);
+    border: 3px solid black;
+    box-shadow: 2px 2px 15px rgba(94, 94, 94, 0.658);
+    border-left: 0px;
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 50px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+    min-width: 420px;
+    padding-right: 40px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+#nav-links a {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    box-shadow: 2px 2px 15px rgba(94, 94, 94, 0.658);
+}
+
+#headshot {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#headshot img {
+    align-self: center;
+}
+
+#headshot ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+#headshot li {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 2px 3px 15px var(--primary-color);
+    width: 300px;
+    text-align: center;
+}
+
+#headshot img {
+    height:500px;
+    border: 10px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 30px var(--primary-color);
+}
+
+section {
+    margin: 40px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+#about-me,
+#my-work,
+#contact-me {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color)
+}
+
+section div {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#work-tiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 800px;
+}
+
+#featured-project img {
+    width: 800px;
+}
+
+#sub-project {
+    width: 350px;
+}
+
+#sub-project img {
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+}
+
+#sub-project {
+    display: block;
+}
+
+h2 {
+    margin: 15px;
+    padding: 15px;
+    border-right: 2px solid rgb(238, 238, 238);
+    text-align: end;
+    font-size: 36px;
+}
+
+#about-me p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(71, 71, 71);
+    border: 5px solid white;
+}
+
+.img-container img {
+    display: block;
+    opacity: 0.5;
+}
+
+.img-container img:hover {
+    opacity: 1.0;
+}
+
+
+#featured-project .overlay-text {
+    position: absolute;
+    font-size: 18px;
+    top: 80%;
+    left: 105px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+#sub-project .overlay-text {
+    position: absolute;
+    font-size: 14px;
+    top: 75%;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+#contact-list {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding-right: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#contact-list a {
+    color: var(--secondary-color)
+}
+
+#contact-list a:hover {
+    color: var(--primary-color);
+}
+
+footer {
+    height: 50px;
+    position: relative;
+    bottom: 0px;
+    background-color: var(--primary-color);
+    border-top: 5px solid var(--secondary-color);
+}
