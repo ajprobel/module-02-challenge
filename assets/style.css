@@ -211,7 +211,7 @@ h2 {
 /* Positioning text overlay on the main featured project */
 #featured-project .overlay-text {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     top: 80%;
     left: 105px;
     transform: translate(-50%, -50%);
@@ -224,7 +224,7 @@ h2 {
 /* Assigning different positioning for the first sub-project */
 #sub-project1 .overlay-text {
     position: absolute;
-    font-size: 14px;
+    font-size: 16px;
     top: 70%;
     left: 115px;
     transform: translate(-50%, -50%);
@@ -237,9 +237,9 @@ h2 {
 /* Assigning different positioning for the second sub-project */
 #sub-project2 .overlay-text {
     position: absolute;
-    font-size: 14px;
+    font-size: 16px;
     top: 74%;
-    left: 70px;
+    left: 74px;
     transform: translate(-50%, -50%);
     background-color: white;
     color: black;
@@ -247,6 +247,10 @@ h2 {
     padding-left: 50px;
 }
 
+/* Formatting subtext underneath project title */
+span.subtext {
+    font-size: 85%;
+}
 #contact-list {
     display: flex;
     justify-content: space-between;
@@ -274,4 +278,57 @@ footer {
     border-top: 5px solid black;
 }
 
+/* Adjusting for viewing on Tablet */
+@media screen and (max-width: 768px) {
+    header,
+    header li,
+    #headshot img,
+    #work-tiles {
+        transform:scale(75%);
+    }
+    #headshot ul {
+        display: none;
+    }
+    #contact-list {
+        transform:scale(85%);
+    }    
+    header h1 {
+        transform:scale(60%);
+    }
+    #headshot {
+        width:auto;
+        flex-flow: row wrap;
+    }
+    #my-work,
+    #contact-me {
+        flex-flow: row wrap;
+    }
+    #my-work {
+        height:850px;
+    }
+    #my-work h2,
+    #contact-me h2 {
+        border-bottom: 2px solid var(--primary-color);
+        border-right: none;
+    }
+}
 
+/* Adjusting for viewing on Mobile */
+@media screen and (max-width: 425px) {
+    header,
+    header li,
+    #headshot img,
+    #work-tiles {
+        transform:scale(50%);
+    }
+    #about-me {
+        flex-flow: row wrap;
+    }
+    #about-me h2 {
+        border-bottom: 2px solid var(--primary-color);
+        border-right: none;
+    }
+    #contact-list {
+        transform:scale(50%);
+    }
+}
