@@ -14,7 +14,9 @@ N/A
 
 ## Usage
 
-To view the published webpage, go to [link here]
+To view the published webpage, go to https://ajprobel.github.io/module-02-challenge/
+
+This is a **desktop-first** designed page, but media queries have been added to help viewing on tablets and mobile devices.
 
 Once on the page, users may scroll throughout the page to view the different sections, or they can click the navigation links in the header - 
 * "About me" will auto-scroll the page to a section with text information about my background and previous roles
